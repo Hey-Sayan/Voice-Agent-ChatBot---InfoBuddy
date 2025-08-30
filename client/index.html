@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day 25 Voice Agent — 2 Skills</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🎙️ InfoBuddy </h1>
+      <p class="subtitle">Speak or type. The agent replies and reads out loud.</p>
+    </header>
+
+    <main>
+      <div id="chat" class="chat"></div>
+s
+      <form id="form" class="composer">
+        <input id="text" type="text" placeholder="Try: weather in Kolkata / who is A. P. J. Abdul Kalam" autocomplete="off" />
+        <button type="submit">Send</button>
+        <button type="button" id="mic">🎤</button>
+      </form>
+
+      <div class="hints">
+        <button class="hint" data-q="weather in Mumbai">weather in Mumbai</button>
+        <button class="hint" data-q="weather at 22.57, 88.36">weather at 22.57, 88.36</button>
+        <button class="hint" data-q="who is Rabindranath Tagore">who is Rabindranath Tagore</button>
+      </div>
+    </main>
+
+    <footer>
+      <small>Day 25 • Two Special Skills • FastAPI + WebSocket • Web Speech API</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
